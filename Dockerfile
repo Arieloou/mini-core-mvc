@@ -6,7 +6,7 @@ RUN apk add --update nodejs npm
 WORKDIR /var/www/html
 
 COPY . .
-# COPY .env.example .env
+COPY .env.example .env
 
 # Allow composer to run as root
 ENV COMPOSER_ALLOW_SUPERUSER=1
